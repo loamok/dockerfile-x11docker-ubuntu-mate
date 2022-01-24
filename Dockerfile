@@ -96,7 +96,7 @@ RUN if lsb_release -cs | grep -qE "precise|trusty"; then \
       ubuntu-mate-desktop --force-yes; \
     else \
       env DEBIAN_FRONTEND=noninteractive apt-get install -y \
-      ubuntu-mate-desktop^; \
+      ubuntu-mate-desktop; \
     fi
 
 # 20.10 specifics
